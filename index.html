@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" id="homepage" class="no-js">
   <head>
+    <title>Event Sign Up Form</title>
     <meta charset="utf-8" />
-
+    <meta name="viewpoint"
+      content="width=divice-width, initinal-scale=l.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="screen.css" />
+    <script src="site.js"></script>
   </head>
 
   <body>
     <header>
-
+      <figure id="Lantern"> <img src="img/Lantern.jpg" alt="Lantern festival" />
+      </figure>
     </header>
 
     <main>
+      <p>
+        Do you want to know more about Chinese culture and to get to know more about
+        what will people do during Chinese New Year? Then you should join us and we will
+        inroduce our culture by having a chit-chat, playing little games, and eating
+        traditional food. You'll get more information about this event via email So sign
+        up please! And we're looking forward to seeing you there!
+      </p>
+      <form method="post" action="#null">
+        <h1> Sign up sheet</h1>
+        <ul>
+          <li id="input-name">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" value="Firstname Lastname" />
+          </li>
 
+          <li>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+          </li>
+
+          <li>
+            <label for="age">Age: </label>
+            <select name="age" id="age">
+              <option value="under 21">Under 21</option>
+              <option value="21 to 25">21 - 25</option>
+              <option value="Above 25">Above 25</option>
+            </select>
+          </li>
+
+          <li id="input-studentID">
+            <label for="ID">Student ID:</label>
+            <input type="text" name="ID" id="ID" pattern="A+12345678" />
+          </li>
+
+          <li id="input-major">
+            <label for="major" name="major" id="major">Major: </label>
+            <input type="text">
+          </li>
+
+          <li id="input-email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="^.+@.+$" />
+          </li>
+
+          <li id="submit-form">
+            <button id="button_s" type="submit" value="Submit">Submit</button>
+            <button id="button_r" type="reset" value="Reset">Cancel</button>
+          </li>
+
+        </ul>
+      </form>
     </main>
 
     <footer>
