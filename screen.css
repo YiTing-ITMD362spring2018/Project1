@@ -432,6 +432,7 @@ h1{
   text-align: center;
   font-size: 1.5em;
   line-height: 2.25em;
+  background-color: #8A4B08;
 }
 
 ul li{
@@ -485,21 +486,19 @@ input{
 }
 
 @media screen and (min-width: 640px) {
-  
-
-}
-
-@media screen and (min-width: 860px) {
-  /*
-      700 pixel grid w/ 80px margins (160)
-      Columns: 200px;
-      Gutters: 50px;
-      Primary module: 450px;
-      Secondary modul: 200px;
-    */
-
-  form {
-    display: block;
-    width: 64.28571429%; /* 450 / 700 = 0.6428571429 */
+  html{
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  main{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  aside{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  #Lantern{
+    align-items: center;
   }
 }
