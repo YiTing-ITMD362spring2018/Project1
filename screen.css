@@ -8,6 +8,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
+/* using scale of 2:3 perfect fifth http://www.modularscale.com/?1&em&1.5*/
+
 /* Document
    ========================================================================== */
 
@@ -175,7 +177,7 @@ textarea {
 
 button,
 input { /* 1 */
-  overflow: visible;
+  overflow-y: visible;
 }
 
 /**
@@ -394,4 +396,102 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Base Styles */
+html{
+  margin: 0;
+  background-color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;   /* 22px / 22 = 1 */
+  line-height: 1.5em;  /* 33 /22 = 1.5 basic line height*/
+}
+
+header{
+  position: static;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1em;
+}
+main{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+aside{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+/* Layout Styles */
+form ul,
+form ul li{
+  list-style-type: none;
+  display: block;
+}
+h1{
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2.25em;
+}
+
+ul li{
+  text-align: left;
+}
+
+p{
+  text-indent: 1em;
+  padding-bottom: 1.5em;
+  text-align: left;
+}
+
+aside{
+  background-color: #000000;
+  color: #F3E2A9;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+label{
+  display:block;
+  text-align: left;
+}
+/* Modular Styles */
+form{
+  background-color: #F2F5A9;
+  display: block;
+}
+input{
+  list-style-type: none;
+}
+
+
+/* State Styles */
+@media screen and (min-width: 320px) {
+  html{
+    
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+
+
+}
+
+@media screen and (min-width: 860px) {
+  /*
+      700 pixel grid w/ 80px margins (160)
+      Columns: 200px;
+      Gutters: 50px;
+      Primary module: 450px;
+      Secondary modul: 200px;
+    */
+
+  form {
+    display: block;
+    width: 64.28571429%; /* 450 / 700 = 0.6428571429 */
+  }
 }
